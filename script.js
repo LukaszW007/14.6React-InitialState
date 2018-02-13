@@ -15,11 +15,11 @@ var Counter = React.createClass({
         })
     },
     getDefaultProps: function () {
-        console.log('getDefaultProps')
+        console.log('getDefaultProps - do inicjalizacji props`ow')
     },
     componentWillMount: function () {
-        console.log('componentWillMount')
-    },
+        console.log('componentWillMount; counter: '+this.state.counter+1)//zmienia wartosc w conosli na 01 zas nie zmienia w renderowanym elemencie
+    },/*
     componentWillReceiveProps: function () {
         console.log('componentWillReceiveProps')
     },
@@ -34,7 +34,7 @@ var Counter = React.createClass({
     },
     componentWillUnmount: function () {
         console.log('componentWillUnmount')
-    },
+    },*/
 
     render: function () {
         return React.createElement('div', {},
